@@ -6,7 +6,7 @@
           "name": "Mayhem for Code",
           "rules": [
             {
-              "id": "MI103",
+              "id": "MI104",
               "name": "ImproperResourceManagement",
               "defaultConfiguration": {
                 "level": "error"
@@ -14,6 +14,23 @@
               "helpUri": "https://www.forallsecure.com/",
               "shortDescription": {
                 "text": "The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements."
+              },
+              "properties": {
+                "problem": {
+                  "severity": "error"
+                },
+                "security-severity": "9.0"
+              }
+            },
+            {
+              "id": "MI104",
+              "name": "ImproperResourceManagementTwo",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://www.forallsecure.com/",
+              "shortDescription": {
+                "text": "The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements. (2)"
               },
               "properties": {
                 "problem": {
@@ -56,7 +73,7 @@
               }
             }
           ],
-          "ruleId": "MI103"
+          "ruleId": "MI104"
         },
         {
           "message": {
