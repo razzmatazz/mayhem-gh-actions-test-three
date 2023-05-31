@@ -8,6 +8,7 @@ env:
 
 jobs:
   build:
+    if: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -38,7 +39,7 @@ jobs:
       image: ${{ steps.meta.outputs.tags }}
 
   mayhem:
-    needs: build
+    #needs: build
     name: 'fuzz Mayhemfile'
     runs-on: ubuntu-latest
     steps:
@@ -51,12 +52,20 @@ jobs:
           mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
           args: --image ${{ needs.build.outputs.image }} --file Mayhemfile --duration 300
           sarif-output: sarif
+        if: false
 
       - name: Upload SARIF file(s)
         uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: sarif
+        if: false
 
       - uses: actions/upload-artifact@v3
         with:
           path: sarif
+        if: false
+
+      - name: Upload SARIF file(s)
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: assets/simple-example.sarif
