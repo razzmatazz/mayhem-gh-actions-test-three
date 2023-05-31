@@ -6,6 +6,12 @@ void fn() {
 
 int main(int argc, char** argv)
 {
+    int c;
+    do {
+        c = getchar();
+    } while (c >= 0);
+
     fn();
+
     return 0;
 }
