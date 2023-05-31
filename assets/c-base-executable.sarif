@@ -24,9 +24,7 @@
                 "text": "help.text"
               },
               "properties": {
-                "problem": {
-                  "severity": "error"
-                },
+                "problem.severity": "error",
                 "security-severity": "9.0"
               }
             },
@@ -47,9 +45,7 @@
                 "text": "help.text"
               },
               "properties": {
-                "problem": {
-                  "severity": "error"
-                },
+                "problem.severity": "error",
                 "security-severity": "9.0"
               }
             }
