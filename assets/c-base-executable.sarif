@@ -57,6 +57,33 @@
       "results": [
         {
           "message": {
+            "markdown": "#0 0xDDDDDDDDDD1f\n#1 0xBEEFBEEFBEEF in main+0x7c at ??:0:0\n#2 0x505089415541f689\n",
+            "text": "TDID-1221346 - Improper Control of Dynamically-Managed Code Resources"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 1,
+                  "startColumn": 1,
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "test.c"
+                }
+              }
+            }
+          ],
+          "ruleId": "MI104",
+          "kind": "fail",
+          "level": "error",
+          "partialFingerprints": {
+            "someHash/v1": "DDDDDDDDDDDDDDDD"
+          }
+        },
+        {
+          "message": {
             "markdown": "#0 0xBBBBBBBE111f\n#1 0xBEEFBEEFBEEF in main+0x7c at ??:0:0\n#2 0x505089415541f689\n",
             "text": "TDID-1221346 - Improper Control of Dynamically-Managed Code Resources"
           },
