@@ -68,4 +68,5 @@ jobs:
       - name: Upload SARIF file(s)
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: assets/simple-example.sarif
+          #sarif_file: assets/simple-example.sarif
+          sarif_file: assets/c-base-executable.sarif
