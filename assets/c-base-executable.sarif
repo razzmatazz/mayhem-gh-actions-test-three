@@ -30,6 +30,36 @@
       "results": [
         {
           "message": {
+            "markdown": "#0 0xDEADC0DE111f\n#1 0xBEEFBEEFBEEF in main+0x7c at ??:0:0\n#2 0x505089415541f689\n",
+            "text": "TDID-1221346 - Improper Control of Dynamically-Managed Code Resources"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 1,
+                  "startColumn": 1,
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "unknown_file"
+                }
+              }
+            }
+          ],
+          "taxa": [
+            {
+              "id": "913",
+              "toolComponent": {
+                "name": "CWE"
+              }
+            }
+          ],
+          "ruleId": "MI103"
+        },
+        {
+          "message": {
             "markdown": "#0 0x55555555006f\n#1 0x5555555551e4 in main+0x7c at ??:0:0\n#2 0x41fd89415541f689\n",
             "text": "TDID-1221346 - Improper Control of Dynamically-Managed Code Resources"
           },
