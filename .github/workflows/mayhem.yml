@@ -69,4 +69,5 @@ jobs:
         uses: github/codeql-action/upload-sarif@v2
         with:
           #sarif_file: assets/simple-example.sarif
-          sarif_file: assets/c-base-executable.sarif
+          #sarif_file: assets/c-base-executable.sarif
+          sarif_file: assets/bad-eval-related-locations.sarif
