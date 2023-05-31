@@ -5,12 +5,146 @@
         "driver": {
           "name": "Mayhem for Code",
           "rules": [
+            {
+              "id": "MI-103",
+              "name": "ImproperResourceManagement",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://www.forallsecure.com/",
+              "shortDescription": {
+                "text": "The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements."
+              },
+              "properties": {
+                "problem": {
+                  "severity": "error"
+                },
+                "security-severity": "9.0"
+              }
+            }
           ],
           "version": "2.3.0",
           "informationUri": "https://www.forallsecure.com/"
         }
       },
       "results": [
+        {
+          "message": {
+            "markdown": "#0 0x55555555006f\n#1 0x5555555551e4 in main+0x7c at ??:0:0\n#2 0x41fd89415541f689\n",
+            "text": "TDID-1221346 - Improper Control of Dynamically-Managed Code Resources"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 1,
+                  "startColumn": 1,
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "unknown_file"
+                }
+              }
+            }
+          ],
+          "taxa": [
+            {
+              "id": "913",
+              "toolComponent": {
+                "name": "CWE"
+              }
+            }
+          ],
+          "ruleId": "MI-103"
+        },
+        {
+          "message": {
+            "markdown": "#0 0x200f0f0f0f\n#1 0x5555555551ea in main+0x82 at ??:0:0\n#2 0x41fd89415541f689\n",
+            "text": "TDID-1221342 - Improper Control of Dynamically-Managed Code Resources"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 1,
+                  "startColumn": 1,
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "unknown_file"
+                }
+              }
+            }
+          ],
+          "taxa": [
+            {
+              "id": "913",
+              "toolComponent": {
+                "name": "CWE"
+              }
+            }
+          ],
+          "ruleId": "MI-103"
+        },
+        {
+          "message": {
+            "markdown": "#0 0xa6f6c64d7\n#1 0x5555555551f0 in main+0x88 at ??:0:0\n#2 0x41fd89415541f689\n",
+            "text": "TDID-1221341 - Improper Control of Dynamically-Managed Code Resources"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 1,
+                  "startColumn": 1,
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "unknown_file"
+                }
+              }
+            }
+          ],
+          "taxa": [
+            {
+              "id": "913",
+              "toolComponent": {
+                "name": "CWE"
+              }
+            }
+          ],
+          "ruleId": "MI-103"
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "organization": "MITRE",
+          "taxa": [
+            {
+              "id": "913",
+              "help": {
+                "text": "The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements."
+              },
+              "name": "Improper Control of Dynamically-Managed Code Resources",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements."
+              },
+              "shortDescription": {
+                "text": "The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements."
+              }
+            }
+          ],
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          }
+        }
       ]
     }
   ],
