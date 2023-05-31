@@ -1,4 +1,6 @@
 {
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
   "runs": [
     {
       "tool": {
@@ -6,7 +8,7 @@
           "name": "Mayhem for Code",
           "rules": [
             {
-              "id": "MI104",
+              "id": "MI103",
               "name": "ImproperResourceManagement",
               "defaultConfiguration": {
                 "level": "error"
@@ -14,6 +16,12 @@
               "helpUri": "https://www.forallsecure.com/",
               "shortDescription": {
                 "text": "The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements."
+              },
+              "fullDescription": {
+                "text": "The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements. (full desc)"
+              },
+              "help": {
+                "text": "help.text"
               },
               "properties": {
                 "problem": {
@@ -31,6 +39,12 @@
               "helpUri": "https://www.forallsecure.com/",
               "shortDescription": {
                 "text": "The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements. (2)"
+              },
+              "fullDescription": {
+                "text": "The software does not properly restrict reading from or writing to dynamically-managed code resources such as variables, objects, classes, attributes, functions, or executable instructions or statements. (2) (full desc)"
+              },
+              "help": {
+                "text": "help.text"
               },
               "properties": {
                 "problem": {
@@ -75,7 +89,10 @@
           ],
           "ruleId": "MI104",
           "kind": "fail",
-          "level": "error"
+          "level": "error",
+          "partialFingerprints": {
+            "someHash/v1": "0000000000000000"
+          }
         },
         {
           "message": {
@@ -105,7 +122,10 @@
               }
             }
           ],
-          "ruleId": "MI103"
+          "ruleId": "MI103",
+          "partialFingerprints": {
+            "someHash/v1": "1111111111111111"
+          }
         },
         {
           "message": {
@@ -135,7 +155,10 @@
               }
             }
           ],
-          "ruleId": "MI103"
+          "ruleId": "MI103",
+          "partialFingerprints": {
+            "someHash/v1": "2222222222222222"
+          }
         },
         {
           "message": {
@@ -165,7 +188,10 @@
               }
             }
           ],
-          "ruleId": "MI103"
+          "ruleId": "MI103",
+          "partialFingerprints": {
+            "someHash/v1": "3333333333333333"
+          }
         }
       ],
       "taxonomies": [
@@ -196,7 +222,5 @@
         }
       ]
     }
-  ],
-  "version": "2.1.0",
-  "$schema": "https://json.schemastore.org/sarif-2.1.0.json"
+  ]
 }
