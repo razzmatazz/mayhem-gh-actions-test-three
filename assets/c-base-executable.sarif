@@ -73,7 +73,9 @@
               }
             }
           ],
-          "ruleId": "MI104"
+          "ruleId": "MI104",
+          "kind": "fail",
+          "level": "error"
         },
         {
           "message": {
